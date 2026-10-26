@@ -1,0 +1,31 @@
+# Tentative timetable. Empty entries preserve slots without an announced event.
+days:
+  - "December 2"
+  - "December 3"
+
+slots:
+  - time: "09:00"
+    events: ["Welcome", ""]
+  - time: "09:15–10:00"
+    events: ["Invited talk I: TBC", "Invited talk III: TBC"]
+  - time: "10:00–10:30"
+    events: ["Coffee Break", ""]
+    emphasis: true
+  - time: "10:30–11:15"
+    events: ["Contributed talks from participants", "Invited talk IV: TBC"]
+  - time: "11:15–12:00"
+    events: ["Poster Session", "Poster Session"]
+  - time: "12:00–14:00"
+    events: ["Research Lunch", ""]
+    emphasis: true
+  - time: "14:00–14:45"
+    events: ["Invited talk II: TBC", "Invited talk V: TBC"]
+  - time: "14:45–15:30"
+    events: ["Open discussion", "Open Problems and Challenges"]
+  - time: "15:30–16:00"
+    events: ["Coffee Break", ""]
+    emphasis: true
+  - time: "16:00–18:00"
+    events: ["City tour", "Departure"]
+  - time: "19:00"
+    events: ["Group dinner", ""]

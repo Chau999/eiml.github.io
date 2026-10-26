@@ -81,6 +81,13 @@
 .programme-format p { color: var(--muted); font-size: 1.125rem; margin-bottom: 0; }
 .programme-note { margin-top: 2rem; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: .5rem 2rem; }
 .programme-note p { color: var(--muted); font-size: 1rem; }
+.programme-timetable { margin-top: 2.5rem; }
+.programme-timetable .schedule-note { color: var(--muted); font-size: 1rem; }
+.programme-timetable .table-scroll:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+table.current-schedule { min-width: 560px; table-layout: fixed; margin-bottom: 0; }
+.current-schedule caption { text-align: left; font-size: 1.3rem; font-weight: 600; color: var(--accent-dark); padding-bottom: 1rem; }
+.current-schedule thead th:first-child { width: 24%; }
+.current-schedule tbody th.when { white-space: nowrap; font-size: 1rem; font-weight: 600; text-transform: none; letter-spacing: 0; color: var(--text); background: transparent; font-variant-numeric: tabular-nums; }
 .venue-introduction { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; margin-top: 2rem; }
 .city-photo { margin: 2rem 0; }
 .city-photo img { display: block; width: 100%; height: auto; border-radius: 4px; }

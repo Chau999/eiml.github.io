@@ -1,0 +1,21 @@
+<div class="programme-timetable">
+  <p id="schedule-note" class="schedule-note">This schedule is tentative and subject to change. Invited talk details are to be confirmed (TBC).</p>
+  <div class="table-scroll" role="region" aria-label="Tentative workshop schedule" tabindex="0">
+    <table class="data current-schedule" aria-describedby="schedule-note">
+      <caption>Tentative schedule</caption>
+      <thead>
+        <tr><th scope="col">Time</th>{% for day in site.data.tentative_schedule.days %}<th scope="col">{{ day | escape }}</th>{% endfor %}</tr>
+      </thead>
+      <tbody>
+{% for slot in site.data.tentative_schedule.slots %}
+        <tr>
+          <th scope="row" class="when">{{ slot.time | escape }}</th>
+{% for event in slot.events %}
+          <td>{% if slot.emphasis and event != "" %}<strong>{{ event | escape }}</strong>{% else %}{{ event | escape }}{% endif %}</td>
+{% endfor %}
+        </tr>
+{% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>

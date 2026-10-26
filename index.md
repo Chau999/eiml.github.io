@@ -82,7 +82,8 @@ landing: true
     <div class="programme-format"><span class="format-number" aria-hidden="true">0{{ forloop.index }}</span><h3>{{ session.title }}</h3><p>{{ session.description }}</p></div>
 {% endfor %}
   </div>
-  <div class="programme-note"><p>The detailed two-day schedule will be announced here.</p><a class="text-link" href="{{ '/invited-talks/' | relative_url }}">Meet the invited speakers <span aria-hidden="true">↗</span></a></div>
+{% include tentative-schedule.html %}
+  <div class="programme-note"><a class="text-link" href="{{ '/invited-talks/' | relative_url }}">Meet the invited speakers <span aria-hidden="true">↗</span></a></div>
 </section>
 
 <section class="landing-section organisers-section" id="organisers" aria-labelledby="organisers-heading">
